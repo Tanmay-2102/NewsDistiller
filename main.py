@@ -11,7 +11,7 @@ from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.vectorstores import FAISS
 from transformers import pipeline
 
-load_dotenv()
+HUGGINGFACEHUB_API_TOKEN = st.secrets["HUGGINGFACEHUB_API_TOKEN"]
 
 st.title("📈 NewsDistiller: News Research Tool")
 st.sidebar.title("News Source Configuration")
